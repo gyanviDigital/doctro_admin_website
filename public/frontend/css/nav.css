@@ -1,0 +1,172 @@
+:root{
+    --color1:#09332f;
+    --color2:#006caa;
+    --color3:white;
+    --color4:rgba(4, 1, 1, 0.9);
+}
+/*navebar css*/
+
+@media (max-width:800px) {
+    #select-box-big-screen{
+      display: none !important;
+    }
+  }
+
+  .nav_box {
+  color:var(--color1);
+      width: 100%;
+      height: auto;
+      place-content: center;
+      place-items: center;
+      background-color:var(--color2);
+      /* overflow-x: hidden; */
+  }
+  
+  .nav1 {
+      width: cover;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px 20px;
+  
+  }
+  
+  .nav_box2 {
+      width: cover;
+      margin: 1px;
+      display: flex;
+      place-content: start;
+      place-items: center;
+      gap: 10px;
+  }
+  
+  .logo {
+      padding: 2px 2px;
+      font-size: x-large;
+      font-weight: 600;
+      margin-right: 10px;
+      display: flex;
+  }
+  
+  .logo_clr1 {
+      color: rgb(218, 94, 12);
+  
+  }
+  
+  .logo_clr2 {
+      margin-left: 2px;
+  }
+  
+  .menubar1 {
+      display: flex;
+      place-items: center;
+      width: auto;
+      gap: 30px;
+      padding: 4px 10px;
+      font-weight: 500;
+  
+  }
+  
+  .nav_a {
+      text-decoration: none;
+      color:var(--color1);
+      font-weight: 800;
+  }
+  .nav_a:hover{
+   border-bottom: 3px solid rgb(0, 242, 255);
+  
+  }
+  
+  #select {
+      font-size: large;
+      outline: none;
+      background-color: transparent;
+      border: none;
+      color: black;
+  }
+  
+  .search_bar {
+      display: flex;
+      place-items: center;
+      color: black;
+  }
+  
+  .search_input {
+      padding: 4px 6px;
+      outline: none;
+      background-color: transparent;
+      border: 1px solid rgb(255, 255, 255);
+      border-radius: 4px;
+      margin-left: 4px;
+      color: black;
+  }
+  
+  .search_input::placeholder {
+      color: black;
+  }
+  
+  .login_logout {
+      display: flex;
+      gap: 5px;
+  }
+  .src_btn{
+      background-color: transparent;
+      border: none;
+      color: black;
+  }
+  
+  /* start small size screen css*/
+  .all_menu {
+      background-color: #ffffff;
+     
+      height: 0;
+      transition-duration: 10s ease-in-out;
+      width: cover;
+      padding: 10px;
+  }
+  
+  .all_menu div,
+  .all_menu select {
+      margin-top: 10px;
+  }
+  
+  .all_menu select {
+      margin-left: -5px;
+      padding: 0;
+      font-weight: 500;
+      font-size: medium;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      /* color: black; */
+  }
+  
+  option {
+      background-color:white
+  }
+  
+  /* over small size screen css*/
+  @media (max-width:1000px) {
+      .menubar1 {
+          display: none;
+      }
+  
+      .login_logout {
+          display: none;
+      }
+  
+      .all_menu_btn {
+          display: block;
+          color: black;
+      }
+  }
+  
+  @media (min-width:1000px) {
+      .all_menu_btn {
+          display: none;
+      }
+  
+  } 
+  
+  /*drop down*/
+

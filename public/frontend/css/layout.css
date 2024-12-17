@@ -1,0 +1,27 @@
+:root{
+    --color1:#09332f;
+    --color2:#006caa;
+    --color3:white;
+    --color4:rgba(4, 1, 1, 0.9);
+}
+
+@media (min-width:800px) {
+    
+    .img_boxx{
+        width: 300px !important;
+    }
+}
+/*contact form*/
+/*most view crousel */
+
+/*crousel*/ 
+.wraps .card{
+    text-align: center;
+    line-height:100px;
+    margin: 10px;  
+}
+.wraps2 .card2{
+    text-align: center;
+    line-height:20px;
+    margin: 10px;  
+}

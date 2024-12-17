@@ -1,0 +1,156 @@
+:root{
+    --color1:#09332f;
+    --color2:#006caa;
+    --color3:white;
+    --color4:rgba(4, 1, 1, 0.9);
+}
+/*bg-color*/
+
+.bg_clr1{
+    transition: 0.5s;
+background-image: linear-gradient(to top,var(--color1),var(--color1),var(--color1),var(--color3));
+color: var(--color3);
+}
+.bg_clr2{
+    transition: 0.5s;
+    background-image: linear-gradient(to top,var(--color2),var(--color2),var(--color2),var(--color3));
+color: var(--color4);
+}
+.bg_clr3{
+    transition: 0.5s;
+    background-image: linear-gradient(to top,var(--color3),var(--color3),var(--color3),var(--color1));
+color: var(--color4);
+}
+.bg_clr4{
+    transition: 0.5s;
+    background-image: linear-gradient(to top,var(--color4),var(--color4),var(--color4),var(--color3));
+color: var(--color3);
+}
+/*hover*/
+.bg_clr1_h:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    background-image: linear-gradient(to top,var(--color2),var(--color2),var(--color2),var(--color3));
+color: var(--color3);
+}
+.bg_clr2_h:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    background-image: linear-gradient(to top,var(--color1),var(--color1),var(--color1),var(--color3));
+    color: var(--color3);
+}
+.bg_clr3_h:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    background-image: linear-gradient(to top,var(--color4),var(--color4),var(--color4),var(--color3));
+    color: var(--color1);
+}
+.bg_clr4_h:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    background-image: linear-gradient(to top,var(--color3),var(--color3),var(--color3),var(--color4));
+    color: var(--color4);
+}
+
+.hover1:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transform: scale(1.1);
+}
+.hover2:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transform: rotateY(360deg);
+}
+.hover3:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    box-shadow: 5px 5px 20px .4px var(--color4);
+}
+.hover4:hover{
+    transition-duration: 0.5s;
+    transition-timing-function: ease-out;
+    filter: grayscale(100%);
+    border-radius: 50%;
+    /* backdrop-filter: blur(4px); */
+}
+/*text color*/
+.text_clr1{
+    color: var(--color1);
+}
+.text_clr2{
+    color: var(--color2);
+}
+.text_clr3{
+    color: var(--color3);
+}.text_clr4{
+    color: var(--color4);
+}
+
+/*box sizes*/
+@media (min-width:800px) {
+    .box_flex3{
+display: flex;
+justify-content: space-around;
+    }
+    .logo{
+        width: 100px;
+    }
+    .box_flex2{
+        display: flex;
+        justify-content: space-around;
+    }
+    .box3{
+        width:20%;
+    }
+    .p_a{
+        padding:70px 0px 0px 0px;
+    }
+    .lbox2{
+        width: 50% !important;
+    }
+ 
+}
+
+@media (max-width:800px) {
+    .logo{
+        width: 150px;
+    }
+    .box_flex3{
+        height: auto;
+display: grid;
+place-items: center;
+    }
+    .box_flex2{
+display: grid;
+place-items: center;
+    }
+    .box3{
+        width: cover;
+    }
+    .box2{
+        width: 100% !important;
+    }
+    .android{
+        display: grid;
+        place-items: center;
+        width: cover;
+        text-align: center;
+    }
+    .p_a{
+        padding-top: 50px;
+    }
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+
+
