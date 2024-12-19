@@ -702,7 +702,7 @@ public function emergencyText(){
     public function bookAppointment(Request $request)
     {
         $data = $request->all();
-
+     
     $type = $request->input('types');
 
     // Check the value

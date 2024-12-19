@@ -23,8 +23,9 @@ $search_img='frontend/image/search2.png';
         <div class="grid gap-2 place-items-center self-center w-auto mt-6 lg:mt-0 ">
             <h3 class="text-xl text-white lg:text-5xl">Are You A Doctor ?</h3>
             <h2 class="text-4xl font-bold text-shadow text-white lg:mt-4">Join Our Team</h2>
-            <a href="{{url('doctor/doctor_login')}}" class="lg:mt-4">  <button class="py-2 px-6 bg-blue-400 rounded shadow text-white font-semibold shadow-green-300  duration-100  hover:scale-105">Join As Doctor</button>     </a>
-        </div>
+            <a href="{{url('doctor/doctor_login')}}" class="lg:mt-4">  <button class="py-2 px-6 bg-green-400 rounded shadow text-white font-semibold shadow-green-300  duration-100  hover:scale-105">Login As a Doctor</button>     </a>
+            <a href="{{url('doctor/doctor_signup')}}" class="lg:mt-4">  <button class="py-2 px-6 bg-blue-400 rounded shadow text-white font-semibold shadow-green-300  duration-100  hover:scale-105">Join As a Doctor</button>     </a>
+            </div>
     </div>
 
 </div>

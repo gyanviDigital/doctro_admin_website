@@ -205,7 +205,7 @@
                 <input type="hidden" name="user_name" value="{{ auth()->user()->name }}">
                 <input type="hidden" name="email" value="{{ auth()->user()->email }}">
                 <input type="hidden" name="phone" value="{{ auth()->user()->phone }}">
-                <input type="hidden" name="payment_type" value="COD">
+                <input type="hidden" name="payment_type" value="COR">
                 <input type="hidden" name="amount" step="any" value="{{ $doctor->appointment_fees }}">
                 <input type="hidden" name="amount2" step="any" value="{{$emergencyData?$emergencyData->fee:0 }}">
                 <input type="hidden" name="payment_token">
@@ -629,11 +629,11 @@
                 <div class="modal-body relative p-4">
                     <form class="addAddress" method="post">
                         <input type="hidden" name="from" value="add_new">
-                        <div class="w-auto border border-white-light" id="map" style="height: 200px">{{ __('Rajkot') }}</div>
+                        <div hidden class="w-auto border border-white-light" id="map" style="height: 200px">{{ __('Rajkot') }}</div>
                         <input type="hidden" name="lat" id="lat" value="{{ $setting->lat }}">
                         <input type="hidden" name="lang" id="lng" value="{{ $setting->lang }}">
                         <input type="hidden" name="user_id" value="{{ auth()->user()->id }}">
-                        <textarea name="address" class="mt-2 form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white-50 bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlTextarea1" rows="3" placeholder="Your message"></textarea>
+                        <textarea name="address" class="mt-2 form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white-50 bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" id="exampleFormControlTextarea1" rows="3" placeholder="Your Address"></textarea>
                         <span class="invalid-div text-red"><span class="address text-sm  text-red-600 font-fira-sans"></span></span>
                     </form>
                 </div>

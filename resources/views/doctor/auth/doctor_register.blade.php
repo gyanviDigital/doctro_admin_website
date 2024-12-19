@@ -46,8 +46,8 @@
                     <label for="email">{{__('Phone') }}</label>
                     <div class="d-flex @error('phone') is-invalid @enderror">
                         <select name="phone_code" class="phone_code_select2">
-                            @foreach ($countries as $country)
-                                <option value="+{{$country->phonecode}}" {{(old('phone_code') == $country->phonecode) ? 'selected':''}}>+{{ $country->phonecode }}</option>
+                             @foreach ($countries as $country)
+                                <option value="+{{$country->phonecode}}" {{(91 == $country->phonecode) ? 'selected':''}}>+{{ $country->phonecode }}</option>
                             @endforeach
                         </select>
                         <input type="number" value="{{ old('phone') }}" name="phone" class="form-control">

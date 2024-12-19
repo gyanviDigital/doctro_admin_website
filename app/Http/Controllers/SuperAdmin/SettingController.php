@@ -21,7 +21,8 @@ class SettingController extends Controller
         $timezones = Timezone::get();
         $currencies = Currency::get();
         $languages = Language::whereStatus(1)->get();
-        return view('superAdmin.setting.setting', compact('setting', 'timezones', 'currencies', 'languages'));
+        // return view('superAdmin.setting.setting', compact('setting', 'timezones', 'currencies', 'languages'));
+        echo "hiiiiii";
     }
 
     public function update_general_setting(Request $request)

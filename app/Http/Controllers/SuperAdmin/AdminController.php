@@ -262,7 +262,9 @@ class AdminController extends Controller
 
     // softwarecharge
     public function softwarecharge(){
-       return view('superAdmin.softwarecharge');
+        $charge=DB::table('software_charge')->first();
+        // dd($charge);
+       return view('superAdmin.softwarecharge',compact('charge'));
     }
     // softwarechargepost
     public function softwarechargepost(Request $request){
